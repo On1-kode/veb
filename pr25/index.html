@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПР‑25. Калькулятор суми</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header><h1>ПР‑25. Калькулятор суми</h1></header>
+  <section>
+    <div class="equation">
+      <label>Перше число<input id="value1" inputmode="decimal"></label>
+      <span>+</span>
+      <label>Друге число<input id="value2" inputmode="decimal"></label>
+      <span>=</span>
+      <span id="result" role="status">—</span>
+    </div>
+    <p><button id="calculate" type="button" onclick="calculate()">Порахувати</button></p>
+    <h2>Історія</h2>
+    <ul id="history"></ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

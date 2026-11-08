@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поштові відправлення</title>
+  <link rel="stylesheet" href="/practicals.css">
+</head>
+<body>
+<main>
+  <header><h1>Поштові відправлення</h1></header>
+  <section>
+    <h2 id="editor-title">Редагування відправлення</h2>
+    <p id="status" role="status"></p>
+    <form id="posting-form" novalidate>
+      <fieldset id="posting-fields" disabled>
+        <legend>Дані відправлення</legend>
+        <div class="fields">
+<label for="from">Місто відправлення<input type="text" id="from" name="from" aria-describedby="from-error" required maxlength="200"><span class="field-error" id="from-error" hidden></span></label>
+<label for="to">Місто отримання<input type="text" id="to" name="to" aria-describedby="to-error" required maxlength="200"><span class="field-error" id="to-error" hidden></span></label>
+<label for="senderName">ПІБ відправника<input type="text" id="senderName" name="senderName" aria-describedby="senderName-error" required maxlength="200"><span class="field-error" id="senderName-error" hidden></span></label>
+<label for="senderPhone">Телефон відправника<input type="tel" id="senderPhone" name="senderPhone" aria-describedby="senderPhone-error" required maxlength="200"><span class="field-error" id="senderPhone-error" hidden></span></label>
+<label for="senderAddress">Адреса або відділення відправлення<input type="text" id="senderAddress" name="senderAddress" aria-describedby="senderAddress-error" required maxlength="200"><span class="field-error" id="senderAddress-error" hidden></span></label>
+<label for="recipientName">ПІБ отримувача<input type="text" id="recipientName" name="recipientName" aria-describedby="recipientName-error" required maxlength="200"><span class="field-error" id="recipientName-error" hidden></span></label>
+<label for="recipientPhone">Телефон отримувача<input type="tel" id="recipientPhone" name="recipientPhone" aria-describedby="recipientPhone-error" required maxlength="200"><span class="field-error" id="recipientPhone-error" hidden></span></label>
+<label for="recipientAddress">Адреса або відділення отримання<input type="text" id="recipientAddress" name="recipientAddress" aria-describedby="recipientAddress-error" required maxlength="200"><span class="field-error" id="recipientAddress-error" hidden></span></label>
+<label for="content">Вміст<input type="text" id="content" name="content" aria-describedby="content-error" required maxlength="200"><span class="field-error" id="content-error" hidden></span></label>
+<label for="deliveryType">Тип доставки<select id="deliveryType" name="deliveryType" aria-describedby="deliveryType-error" required><option value="">Оберіть тип</option><option value="0">У відділення</option><option value="1">Кур’єром</option><option value="2">Експрес</option></select><span class="field-error" id="deliveryType-error" hidden></span></label>
+<label for="weight">Вага у кг<input type="number" id="weight" name="weight" aria-describedby="weight-error" required min="0.01" step="0.01"><span class="field-error" id="weight-error" hidden></span></label>
+<label for="width">Ширина у см<input type="number" id="width" name="width" aria-describedby="width-error" required min="0.01" step="0.01"><span class="field-error" id="width-error" hidden></span></label>
+<label for="height">Висота у см<input type="number" id="height" name="height" aria-describedby="height-error" required min="0.01" step="0.01"><span class="field-error" id="height-error" hidden></span></label>
+<label for="depth">Глибина у см<input type="number" id="depth" name="depth" aria-describedby="depth-error" required min="0.01" step="0.01"><span class="field-error" id="depth-error" hidden></span></label>
+<label for="value">Оголошена цінність у грн<input type="number" id="value" name="value" aria-describedby="value-error" min="0" step="0.01"><span class="field-error" id="value-error" hidden></span></label>
+<label for="description">Додатковий опис<input type="text" id="description" name="description" aria-describedby="description-error" maxlength="200"><span class="field-error" id="description-error" hidden></span></label>
+</div>
+<p>Вартість доставки розраховує сервер після збереження.</p>
+        <button type="submit" id="save">Зберегти</button>
+      </fieldset>
+      <p><button class="secondary" type="button" id="cancel">Скасувати</button></p>
+    </form>
+  </section>
+</main>
+<script type="module" src="edit.js"></script>
+</body>
+</html>
