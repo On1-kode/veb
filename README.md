@@ -1,11 +1,12 @@
 # Практичні роботи з вебпрограмування
 
-ПР-19, ПР-21 і ПР-25 — самостійні роботи JavaScript. ПР-26 та ПР-26–27 використовують PostService. Основа поштового застосунку — [проєкт із компонентів програмної інженерії](https://github.com/On1-kode/posta3.0-ta-inshi-practichni).
+ПР-19, ПР-21 і ПР-25 — самостійні роботи JavaScript. ПР-24 розміщена у вебчастині PostService. ПР-26 та ПР-26–27 використовують його API. Основа поштового застосунку — [проєкт із компонентів програмної інженерії](https://github.com/On1-kode/posta3.0-ta-inshi-practichni).
 
 | Робота | Де знаходиться |
 | --- | --- |
 | ПР-19 Середня оцінка | pr19 |
 | ПР-21 Типи даних і ПДВ | pr21 |
+| ПР-24 Основи ООП | PostServiceSolution/PostService/wwwroot/pr24 |
 | ПР-25 Калькулятор | pr25 |
 | ПР-26 Fetch API | PostServiceSolution/PostService/wwwroot/shipments |
 | ПР-26–27 Форма | PostServiceSolution/PostService/wwwroot/shipments/edit.html та edit.js |
@@ -24,6 +25,8 @@ dotnet run --project PostServiceSolution/PostService
 ```
 
 Початковий вебклієнт: http://localhost:5082/. Таблиця Fetch API: http://localhost:5082/shipments/. Форма: http://localhost:5082/shipments/edit.html. Swagger: http://localhost:5082/swagger/.
+
+ПР-24: http://localhost:5082/pr24/ (у Docker — http://localhost:8080/pr24/).
 
 Відправлення зберігаються в SQLite. Windows-клієнт також залишився в рішенні `PostServiceSolution/PostService.slnx`.
 
